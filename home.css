@@ -4,17 +4,16 @@ body {
   margin: 0;
   padding: 0;
   color: white;
- 
 }
 
 .header {
   background-color: #4682B4;
-  padding: 10px;
+  padding: 10px 20px;
   text-align: left;
   color: white;
-  font-size: 125; 
+  font-size: 15px;
   font-weight: bold;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 
 .image-row {
@@ -39,12 +38,18 @@ body {
   color: white;
   border-radius: 12px;
   width: 400px;
-  text-decoration: none;
+  max-width: 90%; 
+  text-decoration: none; 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
+}
+
+.class-card * {
+  text-decoration: none; 
+  color: inherit; 
 }
 
 .class-card:hover {
@@ -53,7 +58,7 @@ body {
 }
 
 .card-banner {
-  width: 120%;
+  width: 100%;
   height: 150px;
   object-fit: cover;
 }
@@ -73,3 +78,50 @@ body {
 }
 
 
+@media (max-width: 992px) {
+  .header {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .image-row {
+    gap: 30px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 24px;
+  }
+
+  .class-card {
+    width: 350px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .image-row {
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .card-wrapper {
+    padding: 10px;
+  }
+
+  .class-card {
+    width: 300px;
+    max-width: 100%;
+  }
+
+  .card-banner {
+    height: 120px;
+  }
+}
