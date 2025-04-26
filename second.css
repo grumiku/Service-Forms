@@ -27,7 +27,7 @@ h2 {
   margin-bottom: 20px;
   padding: 8px 16px;
   font-size: 16px;
-  background-color: #007BFF;
+  background-color: #034bdb;
   color: white;
   border: none;
   border-radius: 5px;
@@ -42,7 +42,7 @@ h2 {
 
 
 .form-card {
-  background-color:#e2e5e9;
+  background-color:rgb(237, 239, 240);
   border-radius: 12px;
   padding: 30px 25px;
   width: 100%;
@@ -52,7 +52,7 @@ h2 {
 }
 
 .form-card-header {
-  background-color: #4682B4;
+  background-color: #034bdb;
   color: white;
   font-size: 1.3rem;
   font-weight: bold;
@@ -66,7 +66,7 @@ h2 {
 form {
   max-width: 700px;
   width: 100%;
-  background-color: #D3E9F4;
+  background-color:rgb(237, 239, 240);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
@@ -93,7 +93,7 @@ th, td {
 }
 
 th {
-  background-color: #e4e7eb;
+  background-color: #5c93ff;
   font-weight: bold;
 }
 
