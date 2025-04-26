@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiraya Beach Resort</title>
+    <link rel="stylesheet" href="Tourism_feedback.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="message">
+      <h1 id="messageTitle">Thank you for choosing Hiraya Beach Resort</h1>
+      <p id="messageP1">We hope you had a refreshing and enjoyable time at our scenic coastal destination. Your feedback is very valuable to us as it helps us improve our amenities, cleanliness, and visitor experience.</p>
+      <p id="messageP2">Please take a moment to share your thoughts about your visit by filling out the form. Whether it's praise, suggestions, or areas for improvement — we appreciate your voice!</p>
+      <p id="messageP3">Thank you for being part of our beach community and for helping us make this paradise even better for future visitors.</p>
+  </div>
+
+    <div class="container">
+      <div class="language-toggle">
+        🌐 Language:
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('fil')">Filipino</button>
+      </div>
+    
+      <h2 id="formTitle" class="form-title">Hiraya Beach Resort Customer Feedback</h2>
+      <form id="tourismForm">
+        <label id="nationalityLabel">Nationality:</label>
+        <select name="nationality">
+          <option>Local</option>
+          <option>Foreign</option>
+        </select>
+    
+        <label id="dateLabel">Visit Date:</label>
+        <input type="date" name="visitDate" required>
+    
+        <label id="cleanLabel">Cleanliness Rating:</label>
+        <div class="radio-group" id="starRating">
+          <label><input type="radio" name="cleanliness" value="1"> ⭐</label>
+          <label><input type="radio" name="cleanliness" value="2"> ⭐⭐</label>
+          <label><input type="radio" name="cleanliness" value="3"> ⭐⭐⭐</label>
+          <label><input type="radio" name="cleanliness" value="4"> ⭐⭐⭐⭐</label>
+          <label><input type="radio" name="cleanliness" value="5"> ⭐⭐⭐⭐⭐</label>
+        </div>
+        
+    
+        <input type="hidden" name="cleanliness" id="cleanlinessInput">
+    
+        <label id="amenitiesLabel">Amenities Used:</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="amenities" value="Restrooms"> Restrooms</label>
+          <label><input type="checkbox" name="amenities" value="Parking"> Parking</label>
+          <label><input type="checkbox" name="amenities" value="Guides"> Guides</label>
+          <label><input type="checkbox" name="amenities" value="Loungers"> Cabana & Sun Loungers</label> 
+          <label><input type="checkbox" name="amenities" value="Wi=Fi"> Wi-Fi Access</label> 
+          <label><input type="checkbox" name="amenities" value="Sport"> Water Sports Equipment Rental</label> 
+          <label><input type="checkbox" name="amenities" value="First Aid"> First Aid and Lifeguard Stations</label>
+          <label><input type="checkbox" name="amenities" value="Play Area"> Kids' Play Area</label>
+          <label><input type="checkbox" name="amenities" value="Bonfire"> Bonfire and Night Entertainment</label>
+          <label><input type="checkbox" name="amenities" value="Waste Disposal"> Eco-Friendly Waste Disposal Stations</label>
+          
+        </div>
+    
+        <label id="commentsLabel">Comments:</label>
+        <textarea name="comments" rows="3"></textarea>
+    
+        <button type="submit" id="submitBtn">Submit Feedback</button>
+      </form>
+    
+      <table id="feedbackTable">
+        <thead>
+          <tr>
+            <th>Nationality</th>
+            <th>Visit Date</th>
+            <th>Cleanliness</th>
+            <th>Amenities</th>
+            <th>Comments</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="Tourism_feedback.js"></script>
+  </body>
+  
+</html>

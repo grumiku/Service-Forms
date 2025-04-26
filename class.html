@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Feedback Survey</title>
+    <link rel="stylesheet" href="class.css">
+</head>
+<body>
+    <div class="notebook-page">
+        <div class="notebook-header">
+            <img src="header-image.jpg" alt="Header Image" class="notebook-image">
+            <div class="notebook-header-text">
+                <h2 class="notebook-title">Classroom Feedback</h2>
+                <p class="notebook-subtitle">Share your thoughts on our class.</p>
+            </div>
+        </div>
+        <div class="survey-form">
+            <form id="school-survey">
+                <div class="form-group">
+                    <label for="school-name">Your Name:</label>
+                    <input type="text" id="school-name" name="school-name">
+                </div>
+                <div class="form-group">
+                    <label for="school-grade-section">Grade & Section:</label>
+                    <select id="school-grade-section" name="school-grade-section" required>
+                        <option value="">Select</option>
+                        <option value="Grade 7-A">Grade 7-A</option>
+                        <option value="Grade 7-B">Grade 7-B</option>
+                        <option value="Grade 8-A">Grade 8-A</option>
+                        <option value="Grade 8-B">Grade 8-B</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="school-subject">Subject:</label>
+                    <select id="school-subject" name="school-subject" required>
+                        <option value="">Select</option>
+                        <option value="Math">Math</option>
+                        <option value="Science">Science</option>
+                        <option value="English">English</option>
+                        <option value="Filipino">Filipino</option>
+                        <option value="Social Studies">Social Studies</option>
+                    </select>
+                </div>
+                <div class="form-group rating-group">
+                    <label>Teacher Rating</label>
+                    <div class="star-rating">
+                        <input type="radio" id="rating-5" name="teacher-rating" value="5"><label for="rating-5">★</label>
+                        <input type="radio" id="rating-4" name="teacher-rating" value="4"><label for="rating-4">★</label>
+                        <input type="radio" id="rating-3" name="teacher-rating" value="3"><label for="rating-3">★</label>
+                        <input type="radio" id="rating-2" name="teacher-rating" value="2"><label for="rating-2">★</label>
+                        <input type="radio" id="rating-1" name="teacher-rating" value="1"><label for="rating-1">★</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="school-favorite-lesson">Favorite Lesson:</label>
+                    <input type="text" id="school-favorite-lesson" name="school-favorite-lesson">
+                </div>
+                <div class="form-group">
+                    <label for="school-suggestions">Suggestions:</label>
+                    <textarea id="school-suggestions" name="school-suggestions" rows="4"></textarea>
+                </div>
+                <div class="anonymous-option">
+                    <input type="checkbox" id="school-anonymous" name="school-anonymous" value="anonymous">
+                    <label for="school-anonymous">Submit Anonymously</label>
+                </div>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+
+    <h2>Submitted Feedback</h2>
+    <div class="filter-section">
+        <div class="filter-group">
+            <label for="filter-grade-section"><i class="icon-grade"></i> Grade & Section:</label>
+            <select id="filter-grade-section">
+                <option value="">All</option>
+                <option value="Grade 7-A">Grade 7-A</option>
+                <option value="Grade 7-B">Grade 7-B</option>
+                <option value="Grade 8-A">Grade 8-A</option>
+                <option value="Grade 8-B">Grade 8-B</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="filter-subject"><i class="icon-subject"></i> Subject:</label>
+            <select id="filter-subject">
+                <option value="">All Subjects</option>
+                <option value="Math">Math</option>
+                <option value="Science">Science</option>
+                <option value="English">English</option>
+                <option value="Filipino">Filipino</option>
+                <option value="Social Studies">Social Studies</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="filter-rating"><i class="icon-rating"></i> Rating:</label>
+            <select id="filter-rating">
+                <option value="">All Ratings</option>
+                <option value="1">1 Star</option>
+                <option value="2">2 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="5">5 Stars</option>
+            </select>
+        </div>
+    </div>
+    <table id="results-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Grade</th>
+                <th>Subject</th>
+                <th>Rating</th>
+                <th>Favorite Lesson</th>
+                <th>Suggestions</th>
+            </tr>
+        </thead>
+        <tbody id="results-body">
+        </tbody>
+    </table>
+    <script src="class.js"></script>
+</body>
+</html>

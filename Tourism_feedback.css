@@ -1,0 +1,150 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    background-color: rgba(255, 255, 255, 0.95);
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  }
+
+  
+  .message {
+    font-family: 'Poppins', sans-serif;
+    margin: 2em auto;
+    max-width: 900px;
+    line-height: 1.8;
+    color: #333;
+    text-align: center;
+    padding: 0 1em;
+}
+
+.message h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.2em;
+    margin-bottom: 0.4em;
+    color: #1e3d59;
+}
+
+.message p {
+    font-size: 1.15em;
+    margin: 0.4em 0;
+}
+.form-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8em;
+    color: #1e3d59;
+    text-align: center;
+    margin-bottom: 1em;
+}  
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+  .checkbox-group label,
+  .radio-group label {
+    font-weight: normal;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.star-rating {
+    display: inline-block;
+}
+
+.star {
+    font-size: 22px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star.checked {
+    color: gold;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #00695c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+.radio-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  .radio-group label {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+  }
+  
+.language-toggle button {
+    margin-left: 5px;
+    background-color:#004f73;
+    color: #ddd;
+}
+.language-toggle button:hover {
+    background-color: #333;
+}
+#amenitiesLabel {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;  
+}
+.checkbox-group {
+    display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; 
+  margin-top: 0.5rem;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    font-size: 16px;
+    white-space: nowrap;    
+}
